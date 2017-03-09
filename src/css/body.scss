@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+/*****************************************************************************/
+/* SubNav: Style */
+/*****************************************************************************/
+.subnav-container {
+  height: 44px;
+  margin-top: -39px;
+  background-color: #1d1c1e}
+
+.subnav {
+  background: #1d1c1e;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  height: 44px;
+  transition: all .2s linear;}
+
+.subnav-content {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;}
+
+.subnav-list {
+  margin: 0;
+  width: 100%;
+  padding: 0 10px 0 150px;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  transition: all .12s linear;
+  li {
+    float: left;
+    display: list-item;}
+  span {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 11px 10px 8px;
+    display: block;
+    text-transform: uppercase;
+    outline: 0 none;
+    &.active {color: #ff6c00;}
+    &.disabled {
+      color: #767577;
+      cursor: default;}}  
+	a {
+    color: inherit;
+    font: inherit;
+    transition: all .12s linear;
+    text-decoration: inherit;}}
+/*****************************************************************************/
+/* SubNav: Style */
+/*****************************************************************************/
+/*****************************************************************************/
+/* Marquee: Style */
+/*****************************************************************************/
+.marquee-zone {
+  width: 100%;
+  margin-top: 13px;
+  background: #1d1c1e url(https://www.draftkings.com/_raptor/images/marquee-bg.png?1) no-repeat top center;
+  // border-bottom: 3px solid #474648;
+  padding: 20px 0 0 0;}
+
+.marquee-content {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;}
+
+.marquee-pictures {
+  height: 208px;}
+
+.marquee {
+  display: inline-block;
+  position: relative;
+  width: 335px;
+  height: 208px;
+  vertical-align: top;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  img {transition: all 0.3s linear;}}
+
+.rollover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29,28,30,0.86);
+  // opacity: 0;
+  transition: all 0.4s linear;
+  z-index: 99;
+  border-bottom: 3px solid #9ae200;}
+
+.rollover-inner {
+  padding: 60px 0 0 0;
+  margin: 0px auto;
+  width: 310px;
+  transition: all 0s linear;
+  &.rollover-inner-hover {
+    opacity: 1;
+    transition: all 0.4s linear;}
+  div {
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;}
+  >span {
+    width: 260px;
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;}
+  .cta-link {
+    display: block;
+    text-align: right;
+    font: 700 18px 'Oswald', sans-serif;
+    color: #fff;
+    margin-top: 15px;
+    border-bottom: 1px solid transparent;
+    float: right;
+    width: auto;
+    text-transform: uppercase;
+    transition: all 0.24s linear;
+    i {
+      color: #9ae200;
+      margin-left: 2px;}}}
+      
+.marquee-links {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #767577;
+  padding-left: 140px;
+  background-color: #2b2a2c;
+  width: 1024px;
+  margin: 0px auto;}
+  
+.marquee-text-container {
+  height: 38px;}
+  
+#marquee-text {
+  color: #ffd20d;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0;
+  a {color: inherit;}}
+
+a.link-icon {
+  color: #e9e8ea;
+  padding: 0 10px;
+  font-weight: 600;
+  transition: all 0.24s linear;
+  span, i {
+    vertical-align: middle;
+    &:first-child {
+    color: #9ae200;
+      padding-right: 5px;
+      font-size: 15px;}}}
+/*****************************************************************************/
+/* Marquee: Style */
+/*****************************************************************************/
+/*****************************************************************************/
+/* Wick: Style */
+/*****************************************************************************/
+// @media not all, not all, (-webkit-min-device-pixel-ratio: 1.3), not all, (min-resolution: 1.3dppx)
+// .marquee-zone {
+//   background-image: url(../images/marquee-bg@2x.png?1);
+//   background-size: 1224px 500px;
+// }
+
+// .now-playing {
+//   font-family: 'Gotham-Medium', Arial, sans-serif;
+//   font-weight: normal;
+//   font-style: italic;
+//   position: absolute;
+//   top: 128px;
+//   width: 100%;
+//   font-size: 18px;
+//   line-height: 32px;
+//   letter-spacing: 4px;
+//   color: rgb(103, 192, 223);
+//   text-align: center;
+//   white-space: nowrap;
+//   visibility: inherit;
+//   opacity: 1;
+//   transform: matrix(1, 0, 0, 1, 0, 0);
+// }
+
+$width: 1024px;
+$half-width: $width / 2;
+$dark-blue: #31363E;
+
+$blue:    #3dade9;
+$purple:  #bf2fcb;
+
+/* Mixins */
+@mixin box-gradient($from, $to, $weight: 0) {
+  $mix-main: mix($from, $to);
+  $mix-main-r: mix($to, $from);
+  $mix-sub-from: mix($mix-main, $from);
+  $mix-sub-to: mix($mix-main, $to);
+  
+  box-shadow:
+  // left - start color
+  inset -5px 0 10px 10px rgba($from, .75),
+  // top left - mix of two colors plus start
+  inset -5px -10px 10px 10px rgba($mix-sub-from, .25),
+  // bottom left - mix of two colors plus start
+  inset -10px 5px 10px 10px rgba($mix-main, .25),
+  // top mid - mix of two colors
+  inset 0 -10px 10px 10px rgba($mix-main-r, .5),
+  // bottom mid - mix of two colors
+  inset 0 10px 10px 10px rgba($mix-main, .5),
+  // top right - mix of two colors plus end
+  inset 10px -5px 10px 10px rgba($mix-sub-to, .25),
+  // bottom right - mix of two colors plus end
+  inset 5px 10px 10px 10px rgba($mix-sub-to, .25),
+  // right - end color
+  inset 5px 0 10px 10px rgba($to, .75);
+}
+
+.wrapper-container {
+  background: #1d1c1e url(https://www.draftkings.com/_raptor/images/marquee-bg.png?1) no-repeat top center;
+}
+.wrapper {
+  width: $width;
+  height: 350px;
+  margin: 0 auto;
+  // background: $dark-blue;
+  position: relative;
+}
+
+.tri-bottom:after, .tri-top:before {
+	width: 100%;
+	left: 0;
+	position: absolute;
+	z-index: 2;
+  content: "";
+  border: $width/2 solid transparent;
+  display: block;}
+
+.tri {
+	overflow: hidden;
+	// background: $light-blue;
+  background-position: center -70px;
+  background-size: 1024px 682px;
+  background-repeat: no-repeat;
+  // background-image: url(https://images8.alphacoders.com/742/742103.jpg);
+  @include box-gradient($blue, $purple, 1px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tri.tri-bottom:after {
+  // bottom: -584px;
+  // left: 95px;
+  // border-right: 7000px solid #1d1c1e; // 2048px,  width
+  // margin-left: -1536px;} // -1536px, -($half-width * 3)
+  bottom: -991px;
+  left: 39px;
+  transform: rotate(-4deg);
+  border-image: url(https://www.draftkings.com/_raptor/images/marquee-bg.png?1);
+  border-image-width: 1900px 4000px 22px 0;}
+.tri-top:before {
+  // margin-top: -0px;     
+  // top: -950px;
+  // border-left: 7000px solid #1d1c1e;
+  // margin-right: -($width/2 * 3);
+  top: -987px;
+  left: -82px;
+  // margin-right: -($width/2 * 3);
+  transform: rotate(-4deg);
+  border-image: url(https://www.draftkings.com/_raptor/images/marquee-bg.png?1);
+  border-image-width: 22px 0px 1900px 4000px;
+}
+/*****************************************************************************/
+/* Wick: Style */
+/*****************************************************************************/
+
+
+#photo {
+  position: absolute;
+  left: 60%;
+  top: 20%;
+  height: 208px;
+  width: 336px;
+}

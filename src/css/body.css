@@ -30,32 +30,27 @@
   justify-content: space-between;
   list-style: none;
   transition: all .12s linear; }
-
-.subnav-list li {
-  float: left;
-  display: list-item; }
-
-.subnav-list span {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 11px 10px 8px;
-  display: block;
-  text-transform: uppercase;
-  outline: 0 none; }
-
-.subnav-list span.active {
-  color: #ff6c00; }
-
-.subnav-list span.disabled {
-  color: #767577;
-  cursor: default; }
-
-.subnav-list a {
-  color: inherit;
-  font: inherit;
-  transition: all .12s linear;
-  text-decoration: inherit; }
+  .subnav-list li {
+    float: left;
+    display: list-item; }
+  .subnav-list span {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 11px 10px 8px;
+    display: block;
+    text-transform: uppercase;
+    outline: 0 none; }
+    .subnav-list span.active {
+      color: #ff6c00; }
+    .subnav-list span.disabled {
+      color: #767577;
+      cursor: default; }
+  .subnav-list a {
+    color: inherit;
+    font: inherit;
+    transition: all .12s linear;
+    text-decoration: inherit; }
 
 /*****************************************************************************/
 /* SubNav: Style */
@@ -66,7 +61,6 @@
 .marquee-zone {
   width: 100%;
   margin-top: 13px;
-  background: #1d1c1e url(https://www.draftkings.com/_raptor/images/marquee-bg.png?1) no-repeat top center;
   padding: 20px 0 0 0; }
 
 .marquee-content {
@@ -88,9 +82,8 @@
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16); }
-
-.marquee img {
-  transition: all 0.3s linear; }
+  .marquee img {
+    transition: all 0.3s linear; }
 
 .rollover {
   position: absolute;
@@ -106,41 +99,36 @@
   margin: 0px auto;
   width: 310px;
   transition: all 0s linear; }
-
-.rollover-inner.rollover-inner-hover {
-  opacity: 1;
-  transition: all 0.4s linear; }
-
-.rollover-inner div {
-  border-bottom: 1px solid #fff;
-  font-size: 14px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  display: inline-block;
-  font-weight: 600;
-  color: #fff; }
-
-.rollover-inner > span {
-  width: 260px;
-  display: inline-block;
-  font-weight: 600;
-  color: #fff; }
-
-.rollover-inner .cta-link {
-  display: block;
-  text-align: right;
-  font: 700 18px 'Oswald', sans-serif;
-  color: #fff;
-  margin-top: 15px;
-  border-bottom: 1px solid transparent;
-  float: right;
-  width: auto;
-  text-transform: uppercase;
-  transition: all 0.24s linear; }
-
-.rollover-inner .cta-link i {
-  color: #9ae200;
-  margin-left: 2px; }
+  .rollover-inner.rollover-inner-hover {
+    opacity: 1;
+    transition: all 0.4s linear; }
+  .rollover-inner div {
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 600;
+    color: #fff; }
+  .rollover-inner > span {
+    width: 260px;
+    display: inline-block;
+    font-weight: 600;
+    color: #fff; }
+  .rollover-inner .cta-link {
+    display: block;
+    text-align: right;
+    font: 700 18px 'Oswald', sans-serif;
+    color: #fff;
+    margin-top: 15px;
+    border-bottom: 1px solid transparent;
+    float: right;
+    width: auto;
+    text-transform: uppercase;
+    transition: all 0.24s linear; }
+    .rollover-inner .cta-link i {
+      color: #9ae200;
+      margin-left: 2px; }
 
 .marquee-links {
   padding: 15px 0;
@@ -161,23 +149,20 @@
   font-size: 14px;
   font-weight: 700;
   padding: 10px 0; }
-
-#marquee-text a {
-  color: inherit; }
+  #marquee-text a {
+    color: inherit; }
 
 a.link-icon {
   color: #e9e8ea;
   padding: 0 10px;
   font-weight: 600;
   transition: all 0.24s linear; }
-
-a.link-icon span, a.link-icon i {
-  vertical-align: middle; }
-
-a.link-icon span:first-child, a.link-icon i:first-child {
-  color: #9ae200;
-  padding-right: 5px;
-  font-size: 15px; }
+  a.link-icon span, a.link-icon i {
+    vertical-align: middle; }
+    a.link-icon span:first-child, a.link-icon i:first-child {
+      color: #9ae200;
+      padding-right: 5px;
+      font-size: 15px; }
 
 /*****************************************************************************/
 /* Marquee: Style */

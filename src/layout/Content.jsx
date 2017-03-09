@@ -50,18 +50,7 @@ class Content extends React.Component {
             {this.links}
           </div>
         </div>
-        <div id="content_data">
-          <div className="title">
-            <div style={{width:"5%"}}><span>Sport</span></div>
-            <div style={{width:"38.2%"}}><span>Contest</span></div>
-            <div style={{width: "10%"}}><span>EntryFee</span></div>
-            <div style={{width:"12%"}}><span>TotalPrizes</span></div>
-            <div style={{width:"12%"}}><span>Entries</span></div>
-            <div style={{width:"5%"}}><span>Live</span></div>
-          </div>
-          <div className="grid" id="grid">
-          </div>
-        </div>
+      
       </div>
     );
   }

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './css/app.css';
 import './css/body.css';
+import './css/new.css';
 import Nav from './layout/Nav.jsx';
 import SubNav from './layout/SubNav.jsx';
 import Content from './layout/Content.jsx';
+import Lobby from './layout/Lobby.jsx';
 import MarqueeContainer from './layout/MarqueeContainer.jsx';
 import draftKings from './images/draftKings.png';
 
@@ -45,6 +46,7 @@ class App extends Component {
           </div>
         </div>
         <Content content={this.state.tab}/>
+        <Lobby/>
       </div>
     );
   }

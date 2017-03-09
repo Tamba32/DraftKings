@@ -193,74 +193,59 @@ a.link-icon {
 //   transform: matrix(1, 0, 0, 1, 0, 0);
 // }
 
-$width: 1024px;
-$half-width: $width / 2;
-$dark-blue: #31363E;
+// $width: 1024px;
+// $half-width: $width / 2;
+// $dark-blue: #31363E;
 
-$blue:    #3dade9;
-$purple:  #bf2fcb;
+// $blue:    #3dade9;
+// $purple:  #bf2fcb;
 
+// .wrapper-container {
+  // background: #1d1c1e url(https://www.draftkings.com/_raptor/images/marquee-bg.png?1) no-repeat top center;}
 
+// .wrapper {
+//   width: $width;
+//   height: 350px;
+//   margin: 0 auto;
+//   position: relative;
+// }
 
-.wrapper-container {
-  background: #1d1c1e url(https://www.draftkings.com/_raptor/images/marquee-bg.png?1) no-repeat top center;
-}
-.wrapper {
-  width: $width;
-  height: 350px;
-  margin: 0 auto;
-  // background: $dark-blue;
-  position: relative;
-}
+// .tri-bottom:after, .tri-top:before {
+// 	width: 100%;
+// 	left: 0;
+// 	position: absolute;
+// 	z-index: 2;
+//  content: "";
+//  border: $width/2 solid transparent;
+//  display: block;}
 
-.tri-bottom:after, .tri-top:before {
-	width: 100%;
-	left: 0;
-	position: absolute;
-	z-index: 2;
-  content: "";
-  border: $width/2 solid transparent;
-  display: block;}
+// .tri {
+//   overflow: hidden;
+//   background: $light-blue;
+//   background-position: center -70px;
+//   background-size: 1024px 682px;
+//   background-repeat: no-repeat;
+//   background-image: url(https://images8.alphacoders.com/742/742103.jpg);
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;}
 
-.tri {
-	overflow: hidden;
-	// background: $light-blue;
-  background-position: center -70px;
-  background-size: 1024px 682px;
-  background-repeat: no-repeat;
-  // background-image: url(https://images8.alphacoders.com/742/742103.jpg);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
+// .tri.tri-bottom:after {
+//   bottom: -991px;
+//   left: 39px;
+//   transform: rotate(-4deg);
+//   border-image: url(https://www.draftkings.com/_raptor/images/marquee-bg.png?1);
+//   border-image-width: 1900px 4000px 22px 0;}
 
-.tri.tri-bottom:after {
-  // bottom: -584px;
-  // left: 95px;
-  // border-right: 7000px solid #1d1c1e; // 2048px,  width
-  // margin-left: -1536px;} // -1536px, -($half-width * 3)
-  bottom: -991px;
-  left: 39px;
-  transform: rotate(-4deg);
-  border-image: url(https://www.draftkings.com/_raptor/images/marquee-bg.png?1);
-  border-image-width: 1900px 4000px 22px 0;}
-.tri-top:before {
-  // margin-top: -0px;     
-  // top: -950px;
-  // border-left: 7000px solid #1d1c1e;
-  // margin-right: -($width/2 * 3);
-  top: -987px;
-  left: -82px;
-  // margin-right: -($width/2 * 3);
-  transform: rotate(-4deg);
-  border-image: url(https://www.draftkings.com/_raptor/images/marquee-bg.png?1);
-  border-image-width: 22px 0px 1900px 4000px;
-}
+// .tri-top:before {
+//   top: -987px;
+//   left: -82px;
+//   transform: rotate(-4deg);
+//   border-image: url(https://www.draftkings.com/_raptor/images/marquee-bg.png?1);
+//   border-image-width: 22px 0px 1900px 4000px;}
 /*****************************************************************************/
 /* Wick: Style */
 /*****************************************************************************/
-
-
 #photo {
   position: absolute;
   left: 60%;

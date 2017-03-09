@@ -40,7 +40,14 @@ header {
 }
 
 .page-content {
+  background: url(http://easterneronline.com/wp-content/uploads/2015/04/wick-SummitEntertainment-900x500.jpg);
   padding-top: 90px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;}
+  
+.wrapper {
+  height: 360px;
 }
 /*****************************************************************************/
 /* Nav: Style */

@@ -200,31 +200,7 @@ $dark-blue: #31363E;
 $blue:    #3dade9;
 $purple:  #bf2fcb;
 
-/* Mixins */
-@mixin box-gradient($from, $to, $weight: 0) {
-  $mix-main: mix($from, $to);
-  $mix-main-r: mix($to, $from);
-  $mix-sub-from: mix($mix-main, $from);
-  $mix-sub-to: mix($mix-main, $to);
-  
-  box-shadow:
-  // left - start color
-  inset -5px 0 10px 10px rgba($from, .75),
-  // top left - mix of two colors plus start
-  inset -5px -10px 10px 10px rgba($mix-sub-from, .25),
-  // bottom left - mix of two colors plus start
-  inset -10px 5px 10px 10px rgba($mix-main, .25),
-  // top mid - mix of two colors
-  inset 0 -10px 10px 10px rgba($mix-main-r, .5),
-  // bottom mid - mix of two colors
-  inset 0 10px 10px 10px rgba($mix-main, .5),
-  // top right - mix of two colors plus end
-  inset 10px -5px 10px 10px rgba($mix-sub-to, .25),
-  // bottom right - mix of two colors plus end
-  inset 5px 10px 10px 10px rgba($mix-sub-to, .25),
-  // right - end color
-  inset 5px 0 10px 10px rgba($to, .75);
-}
+
 
 .wrapper-container {
   background: #1d1c1e url(https://www.draftkings.com/_raptor/images/marquee-bg.png?1) no-repeat top center;
@@ -253,7 +229,6 @@ $purple:  #bf2fcb;
   background-size: 1024px 682px;
   background-repeat: no-repeat;
   // background-image: url(https://images8.alphacoders.com/742/742103.jpg);
-  @include box-gradient($blue, $purple, 1px);
   position: absolute;
   width: 100%;
   height: 100%;

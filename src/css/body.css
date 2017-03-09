@@ -185,7 +185,6 @@ a.link-icon span:first-child, a.link-icon i:first-child {
 /*****************************************************************************/
 /* Wick: Style */
 /*****************************************************************************/
-/* Mixins */
 .wrapper-container {
   background: #1d1c1e url(https://www.draftkings.com/_raptor/images/marquee-bg.png?1) no-repeat top center; }
 
@@ -209,7 +208,6 @@ a.link-icon span:first-child, a.link-icon i:first-child {
   background-position: center -70px;
   background-size: 1024px 682px;
   background-repeat: no-repeat;
-  box-shadow: inset -5px 0 10px 10px rgba(61, 173, 233, 0.75), inset -5px -10px 10px 10px rgba(94, 142, 226, 0.25), inset -10px 5px 10px 10px rgba(126, 110, 218, 0.25), inset 0 -10px 10px 10px rgba(126, 110, 218, 0.5), inset 0 10px 10px 10px rgba(126, 110, 218, 0.5), inset 10px -5px 10px 10px rgba(159, 79, 211, 0.25), inset 5px 10px 10px 10px rgba(159, 79, 211, 0.25), inset 5px 0 10px 10px rgba(191, 47, 203, 0.75);
   position: absolute;
   width: 100%;
   height: 100%; }

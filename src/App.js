@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import './css/app.css';
 import './css/body.css';
 import './css/new.css';
+import Logo from './images/logo.png';
+import wickLogo from './images/wickLogo.png';
+import bankShot01 from './images/bankShot01.png';
+import bankShot02 from './images/bankShot02.png';
 import Nav from './layout/Nav.jsx';
 import SubNav from './layout/SubNav.jsx';
 import Content from './layout/Content.jsx';
 import Lobby from './components/lobby/Lobby.jsx';
 import MarqueeContainer from './layout/MarqueeContainer.jsx';
-import draftKings from './images/draftKings.png';
 
 class App extends Component {
   
@@ -39,14 +42,21 @@ class App extends Component {
           <MarqueeContainer/>
           <div className="wrapper-container">
             <div className="wrapper">
-              <div className="tri-top tri"></div>
-              <div className="tri-bottom tri"></div>
-              <img id="photo" src={draftKings} />
+              <img id="photo" src={bankShot01}/>
+              <img id="photo-2" src={bankShot02}/>
+              <div id="logo-container">
+                <div className="logo-t">Presented By</div> 
+                <div className="logo-text">Presented by</div>
+                <img id="logo" src={Logo} />
+                
+                <div className="logo-text">Now Playing</div>
+              </div>
             </div>
           </div>
-        </div>
-        <Content content={this.state.tab}/>
+          <Content content={this.state.tab}/>
         <Lobby/>
+        </div>
+        
       </div>
     );
   }

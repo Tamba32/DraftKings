@@ -1,11 +1,12 @@
 import React from 'react';
+import _ from 'underscore';
 
 import LobbyRow from './LobbyRow.jsx';
 
 class LobbyRows extends React.Component {
   
   get rowContent() {
-    return [
+    const uniqueList = [
     	{
         sport: 'golf',
         featured: true,
@@ -22,7 +23,7 @@ class LobbyRows extends React.Component {
         fee: '3',
         prizes: '10,000',
         entries: '3921/3921',
-        live: '00:00:00'
+        live: '4/6 5:00a'
     	},
   	  {
         sport: 'golf',
@@ -60,7 +61,7 @@ class LobbyRows extends React.Component {
         prizes: '1,000',
         entries: '85/229',
         m: true,
-        live: 'running'
+        live: '4/6 5:00a'
     	},
     	{
         sport: 'baseball',
@@ -93,6 +94,7 @@ class LobbyRows extends React.Component {
         live: 'Thu 6:30p'
     	},
     ];
+    return _.flatten([uniqueList, uniqueList, uniqueList, uniqueList]);
   }
   
   get rows() {

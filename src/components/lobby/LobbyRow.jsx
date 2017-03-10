@@ -2,12 +2,6 @@ import React from 'react';
 
 class LobbyRow extends React.Component {
   
-  // constructor() {
-  //   super();
-    
-  //   this.getRandomNumber = this.getRandomNumber.bind(this);
-  // }
-  
   getIcon(sport) {
     switch(sport) {
       case 'basketball':
@@ -19,7 +13,7 @@ class LobbyRow extends React.Component {
       case 'soccer': 
         return 'ion-ios-football';
       case 'golf':
-        return 'ion-ios-world';
+        return 'ion-ios-americanfootball';
       case 'videogame':
         return 'ion-ios-game-controller-b';
     }
@@ -28,10 +22,6 @@ class LobbyRow extends React.Component {
   componentDidMount() {
     this.highlightText;
   }
-  
-  // getRandomNumber() {
-  //   return Math.floor(Math.random() * this.props.length);
-  // }
   
   get highlightText() {
     const {index} = this.props;

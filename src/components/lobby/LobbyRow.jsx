@@ -25,13 +25,13 @@ class LobbyRow extends React.Component {
   
   get highlightText() {
     const {index} = this.props;
-    const num = Math.floor(Math.random() * this.props.length);
+    const num = Math.floor(Math.random() * 6);
     const rows = document.getElementsByClassName('slick-row');
-    if (index === num) {
-      rows[num].className += ' active';
-      setTimeout(() => {rows[num].classList.remove('active')}, 600);
+    if (index%6 === num) {
+      rows[index].className += ' active';
+      setTimeout(() => {rows[index].classList.remove('active')}, 1200);
     }
-    // setTimeout(() => {this.highlightText},  3000);
+    setTimeout(() => {this.highlightText},  6000);
   }
   
   render() {

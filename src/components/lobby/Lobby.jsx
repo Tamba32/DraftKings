@@ -4,23 +4,6 @@ import LobbyRows from './LobbyRows.jsx';
 
 class Lobby extends React.Component {
 
-  getIcon(sport) {
-    switch(sport) {
-      case 'basketball':
-        return 'ion-ios-basketball';
-      case 'baseball':
-        return 'ion-ios-baseball';
-      case 'mma':
-        return 'ion-android-hand';
-      case 'soccer': 
-        return 'ion-ios-football';
-      case 'golf':
-        return 'ion-ios-world';
-      case 'videogame':
-        return 'ion-ios-game-controller-b';
-    }
-  }
-
   get columnContent() {
     return [
       { title: 'Sport',
@@ -40,7 +23,7 @@ class Lobby extends React.Component {
   
   get columns() {
     return this.columnContent.map((column, i) => (
-      <div className="slick-header-column" style={{width: column.width + "px"}}>
+      <div key={i} className="slick-header-column" style={{width: column.width + "px"}}>
         <span className="slick-column-name">{column.title}</span>
         <span className="slick-sort-indicator"></span>
       </div>

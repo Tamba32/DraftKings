@@ -105,7 +105,7 @@
   background-color: #f7f6f8;}
 
 .grid-canvas {
-  height: 21480px;
+  // height: 21480px;
   width: 1024px;
   position: relative;
   outline: 0;}
@@ -113,16 +113,17 @@
 .dk-grid .grid-canvas {
   background-color: #f7f6f8;}
 
-.slick-row {
+.grid-canvas .slick-row {
   transition: all 0.06s linear;
   background: transparent url(https://www.draftkings.com/_raptor/images/gray-pixel.gif) bottom left repeat-x;
-  // position: absolute;
   border: 0px;
   width: 100%;
   height: 40px;
   box-sizing: content-box;
-  &.active {
-    background: red;
+  &.active .slick-cell {
+    // background: red;
+    color: #ff6c00 !important;
+    &:nth-child(2) a {color: #ff6c00;}
   }
 }
 

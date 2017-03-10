@@ -5,7 +5,7 @@ import './css/new.css';
 import Nav from './layout/Nav.jsx';
 import SubNav from './layout/SubNav.jsx';
 import Content from './layout/Content.jsx';
-import Lobby from './layout/Lobby.jsx';
+import Lobby from './components/lobby/Lobby.jsx';
 import MarqueeContainer from './layout/MarqueeContainer.jsx';
 import draftKings from './images/draftKings.png';
 

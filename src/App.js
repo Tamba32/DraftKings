@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import WickPage from './layout/WickPage.jsx';
+import WickPage from './wick/layout/WickPage.jsx';
 
 class App extends Component {
   

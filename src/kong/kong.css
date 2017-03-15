@@ -1,14 +1,6 @@
 .home-content {
-  position: absolute;
   width: 100%;
-  height: 100%;
-  padding: 5%;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  justify-content: flex-end;
-  align-items: center;
-  overflow: hidden; }
+  height: 100%; }
 
 .background {
   position: absolute;
@@ -53,21 +45,28 @@
   bottom: 0;
   left: 0; }
 
-.parallax__layer img {
+.parallax__layer > img {
   display: block;
   position: absolute;
   bottom: 0;
-  max-width: 3125px;
+  max-width: 3000px;
   max-height: 1563px; }
 
-.parallax__cover {
-  background: #2D112B;
+#parallax__cover {
+  background: #ffffff;
   position: absolute;
   top: 100%;
-  left: 0;
-  right: 0;
-  height: 2000px;
-  z-index: 2; }
+  left: 832px;
+  width: 100vw;
+  min-height: 300px;
+  z-index: 5; }
+
+#parallax__cover img {
+  height: 233px;
+  z-index: 500;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute; }
 
 .parallax__layer__0 {
   transform: translateZ(-350px) scale(4.5); }

@@ -38,14 +38,9 @@ class WickPage extends Component {
         </header>
         <div className="page-content">
           <MarqueeContainer/>
-          <div className="wrapper-container">
-            <div className="wrapper">
-              <img id="photo" src={bankShot01}/>
-              <img id="photo-2" src={bankShot02}/>
-            </div>
-          </div>
+          
           <Content content={this.state.tab}/>
-        <Lobby/>
+          <Lobby/>
         </div>
       </div>
     );

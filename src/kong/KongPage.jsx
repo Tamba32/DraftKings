@@ -1,8 +1,12 @@
 import React from 'react';
 
 import './kong.css';
+import './../wick/css/app.css';
+import './../wick/css/body.css';
+import './../wick/css/new.css';
 
-// import ReactResizeDetector from 'react-resize-detector';
+import Lobby from './../wick/components/lobby/Lobby.jsx';
+
 import $ from "jquery";
 
 import zeroth from './images/0.png';
@@ -29,15 +33,13 @@ class KongPage extends React.Component {
   componentDidMount() {
     $(window).resize(function() {
       console.log(window.innerWidth);
-      // console.log('...' + document.documentElement.clientWidth);
-      
-      $('#parallax__cover').css('left', 1500 - window.innerWidth/2+'px')
+      $('#parallax__cover').css('left', 1500 - window.innerWidth/2 + 'px');
     });
   }
   
   get backgrounds() {
     return [...Array(3)].map((background, i) => (
-      <div key={i} className={"background background-" + i}></div>
+      <div key={i} className={"background-color background-" + i}></div>
     ));
   }
   
@@ -73,9 +75,6 @@ class KongPage extends React.Component {
     
   }
   
-  
-  
-  
   render() {
     console.log($)
     return (
@@ -87,6 +86,7 @@ class KongPage extends React.Component {
             <img src={zeroth2}/>
             <div id="parallax__cover">
               <img src={koth}/>
+              <Lobby/>
             </div>
           </div>
         </div>

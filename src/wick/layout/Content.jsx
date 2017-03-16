@@ -27,12 +27,16 @@ class Content extends React.Component {
     ];
   }
   
+  getAnchor(link) {
+    return link.indexOf('http') > -1 ? link : "https://www.draftkings.com/" + link;
+  }
+  
   get links() {
     return this.linkContent.map((link, i) => {
       const divider = (i + 1) < this.linkContent.length ? '|' : '';
       return (
         <span key={i}>
-          <a href={link.link} className="link-icon">
+          <a href={this.getAnchor(link.link)} className="link-icon">
             <i className={link.icon}></i>
             <span>{link.text}</span>
           </a>
@@ -50,7 +54,6 @@ class Content extends React.Component {
             {this.links}
           </div>
         </div>
-      
       </div>
     );
   }

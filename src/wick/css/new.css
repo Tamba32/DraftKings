@@ -23,7 +23,6 @@
     transition: opacity 0.8s, z-index 0.8s; }
 
 .lobby-grid {
-  height: 834px;
   overflow: hidden;
   outline: 0px;
   position: relative;
@@ -98,7 +97,6 @@
   overflow: auto;
   outline: 0px;
   position: relative;
-  height: 802px;
   box-sizing: content-box;
   background-color: #f7f6f8; }
 

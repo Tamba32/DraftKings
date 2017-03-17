@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import './../css/app.css';
 import './../css/body.css';
 import './../css/new.css';
+import './../../kong/kong.css';
 import bankShot01 from './../images/bankShot01.png';
 import bankShot02 from './../images/bankShot02.png';
 import Nav from './Nav.jsx';
 import SubNav from './SubNav.jsx';
-import Content from './Content.jsx';
-import Lobby from './../components/lobby/Lobby.jsx';
+// import Lobby from './../components/lobby/Lobby.jsx';
 import MarqueeContainer from './MarqueeContainer.jsx';
+import KongPage from './../../kong/KongPage.jsx';
 
 class WickPage extends Component {
   
@@ -38,9 +39,9 @@ class WickPage extends Component {
         </header>
         <div className="page-content">
           <MarqueeContainer/>
-          
-          <Content content={this.state.tab}/>
-          <Lobby/>
+          <KongPage/>
+          {/*<Content/>
+          <Lobby/>*/}
         </div>
       </div>
     );

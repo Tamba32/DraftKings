@@ -6,16 +6,9 @@ import './../wick/css/body.css';
 import './../wick/css/new.css';
 
 import Lobby from './../wick/components/lobby/Lobby.jsx';
+import Content from './../wick/layout/Content.jsx';
 
 import $ from "jquery";
-
-import zeroth from './images/0.png';
-import first from './images/1.png';
-import second from './images/2.png';
-import third from './images/3.png';
-import fourth from './images/4.png';
-import fifth from './images/5.png';
-import sixth from './images/6.png';
 
 import zeroth2 from './images2/kong_Military.png';
 import first2 from './images2/kong_Water.png';
@@ -25,8 +18,15 @@ import fourth2 from './images2/kong_2ndBackMost.png';
 import fifth2 from './images2/kong_Kong.png';
 import sixth2 from './images2/kong_BackMost.png';
 import seventh2 from './images2/kong_Sky.png';
+import waterClear from './images2/kongBig_Logo.png'
 
-import koth from './images2/koth.png';
+// import koth from './images2/koth.png';
+
+import koth from './words/words-01.png';
+import become from './words/words-02.png';
+import fantasy from './words/words-03.png';
+
+import waterGraphic from './images2/waterGraphic.png';
 
 class KongPage extends React.Component {
   
@@ -44,48 +44,45 @@ class KongPage extends React.Component {
   }
   
   get content() {
-    return [zeroth, first, second, third, fourth, fifth, sixth].reverse();
+    return [seventh2, sixth2, fifth2, fourth2, third2, second2, first2, zeroth2];
   }
   
   get parallaxes() {
     return this.content.map((para, i) => (
-      <div className={"parallax__layer parallax__layer__"+(i+1)}>
-        <img src={para}/>
-      </div>
-    ));
-  }
-  
-  get content2() {
-    return [seventh2, sixth2, fifth2, fourth2, third2, second2, first2];
-  }
-  
-  get parallaxes2() {
-    return this.content2.map((para, i) => (
       <div className={"parallax__layer parallax__layer__"+(i)}>
-        <img src={para}/>
+        <img src={para} ref="img"/>
       </div>
     ));
   }
   
-  get width() {
-    console.log(window.innerWidth);
-    return {width: window.innerWidth};
-    // if (window.innerWidth >= 925) return;
-    
-    
+  get style() {
+    return {
+      left: 1500 - window.innerWidth/2 + 'px',
+      background: 'url(' + waterGraphic+  ') center / cover no-repeat, linear-gradient(to bottom, #294654, #000000)'
+    };
   }
   
   render() {
-    console.log($)
     return (
       <div className="home-content">
         {this.backgrounds}
         <div className="parallax">
-          {this.parallaxes2}
-          <div className={"parallax__layer parallax__layer__"+(7)}>
-            <img src={zeroth2}/>
-            <div id="parallax__cover">
-              <img src={koth}/>
+          {this.parallaxes}
+          <div className={"parallax__layer parallax__layer__"+(8)}>
+            <img src={waterClear} ref="img"/>
+            <div id="parallax__cover" style={this.style}>
+              <div id="kk-holder">
+                <img id="become" src={become} ref='img'/>
+                <img id="fantasy" src={fantasy} ref='img'/>
+                <div className="media-row">
+                  <img id="koth" src={koth} ref='koth'/>
+                  <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/44LdLqgOpjo" frameborder="0"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+              <Content/>
               <Lobby/>
             </div>
           </div>

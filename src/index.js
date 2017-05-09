@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import KongPage from './kong/KongPage.jsx';
-import './wick/css/reset.css';
+import KongPage from './dk/kong/KongPage.jsx';
+import './dk/css/reset.css';
 import { Router, Route, browserHistory } from 'react-router';
 
 class Boujee extends React.Component {

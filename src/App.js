@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-import WickPage from './wick/layout/WickPage.jsx';
-import KongPage from './kong/KongPage.jsx';
+import './dk/css/app.css';
+
+import DraftKings from './dk/DraftKings.jsx';
 
 class App extends Component {
   
   render() {
     return (
-      <div className="App">
-        <WickPage/>
-        {/*<KongPage/>*/}
+      <div id="draftkings-app">
+        <DraftKings/>
       </div>
     );
   }

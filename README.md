@@ -10,7 +10,7 @@ Recently I applied to a front-end developer position at **DraftKings**.  During 
 
 
 
-(For the uninitiated, [DraftKings](http://www.draftkings.com) is a daily fantasy sports company. Participants in the service pay an entry fee to place bets on how they believe athletes will perform during their games that day.  The participants whose picks perform better than their peers’ win money and prizes,  alike standard betting/gambling wagers. Sometimes, companies, products, and movies advertise on DraftKings by allowing users to play contests for free sponsoring the prizes of those contests.  The following is an example of a movie sponsored contest that was recently posted advertised on the DraftKings site.)
+(For the uninitiated, [DraftKings](http://www.draftkings.com) is a daily fantasy sports company. Participants in the service pay an entry fee to place bets on how they believe athletes will perform during their games that day.  The participants whose picks perform better than their peers’ win money and prizes,  alike standard betting/gambling wagers. Sometimes, companies, products, and movies advertise on DraftKings by allowing users to play contests for free by sponsoring the prizes of those contests.  The following is an example of a movie sponsored contest that was recently posted advertised on the DraftKings site.)
 
 ![Belko Experiment Screenshot](http://i.imgur.com/yM5UcMV.jpg)
 
